@@ -1,0 +1,196 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.autor {
+    text-align: center;
+    color: #888;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+/* ===== FORMULARIO ===== */
+.formulario {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.formulario input[type="text"] {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    min-width: 200px;
+    transition: border-color 0.3s;
+}
+
+.formulario input[type="text"]:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.botones-form {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* ===== BOTONES ===== */
+button {
+    padding: 0.8rem 1.5rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+}
+
+.btn-cancelar {
+    padding: 0.8rem 1.5rem;
+    background: #e5e7eb;
+    color: #333;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.btn-cancelar:hover {
+    background: #d1d5db;
+}
+
+/* ===== TABLA ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th {
+    background: #667eea;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+}
+
+tr:hover {
+    background: #f5f7ff;
+}
+
+.acciones {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+/* ===== BOTONES DE ACCIONES ===== */
+.btn-editar,
+.btn-eliminar {
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.btn-editar {
+    background: #fbbf24;
+    color: #333;
+}
+
+.btn-editar:hover {
+    background: #f59e0b;
+}
+
+.btn-eliminar {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background: #dc2626;
+}
+
+/* ===== SIN TAREAS ===== */
+.sin-tareas {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 2rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .formulario {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    td, th {
+        padding: 0.5rem;
+    }
+
+    .acciones {
+        flex-direction: column;
+    }
+}
